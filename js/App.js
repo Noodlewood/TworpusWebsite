@@ -6,18 +6,27 @@ TWRP.ns('TWRP');
 TWRP.App = Class.extend(TWRP.util.Observable, {
 
 	initialize: function() {
-		this.centerContent();
 		this.initNaviButtons();
-	},
+		this.initVisualisationsPane();
 
-	centerContent: function() {
-		var centerPadding = $(window).width() / 5;
-		$('.center').css('padding', '25px ' + centerPadding + 'px');
 	},
 
 	initNaviButtons: function() {
 		$('.navi-btn').click(function() {
-			$("html, body").animate({scrollTop: $('.' + $(this).text().toLocaleLowerCase()).position().top + "px" });
+			$("html, body").animate({scrollTop: $('.' + $(this).text().toLocaleLowerCase()).position().top - $('.header').height() + "px" });
+		});
+	},
+
+	initVisualisationsPane: function() {
+		var visContainer = $('.visualisations');
+		var heightNormal = visContainer.height();
+		var heightExpanded = 500;
+		$('.visualisations-btn').click(function() {
+			if (visContainer.height() == heightExpanded) {
+				visContainer.animate({height: heightNormal});
+			} else {
+				visContainer.animate({height: heightExpanded});
+			}
 		});
 	}
 });

@@ -1,6 +1,10 @@
 body {
-    margin: 50px 0 0 0;
+    margin: 70px 0 0 0;
+}
 
+.center {
+    width: 1024px;
+    margin: 0 auto;
 }
 
 .header  {
@@ -8,12 +12,22 @@ body {
     top: 0;
     width: 100%;
     z-index: 100000;
-    background: #fff none;
+    background: #2E3024 none;
+    color: #fff;
+}
+
+.header .content {
+    width: 1000px;
+    margin: 0 auto;
+    height: 70px;
+}
+
+.header .content > * {
+    margin: 27px 0 0 0;
 }
 
 .header .tworpus {
     float: left;
-
 }
 
 .header .navi {
@@ -27,7 +41,6 @@ body {
 
 .navi-btn:hover {
     color: #DFFB3F;
-
 }
 
 .header .navi > *{
@@ -36,8 +49,9 @@ body {
 }
 
 .about {
-    background: #F06C98 none;
+    background: #fff none;
     height: 600px;
+    padding: 25px 0 0 0;
 }
 
 .stats {
@@ -46,11 +60,94 @@ body {
 }
 
 .software {
-    background: #966BD6 none;
+    background: #fff none;
     height: 200px;
 }
 
 .visualisations {
-    background: #fff none;
-    height: 200px;
+    background: #252E2A none;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.visualisations-btn {
+    cursor: pointer;
+}
+
+.stats .numbers {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.stats .numbers > *{
+    display: inline-block;
+    margin: 0 125px 0 0;
+    height: 40px;
+    padding: 0 0 0 45px;
+}
+
+.stats .archived {
+    background: transparent url(../gfx/archived.png) left center no-repeat;
+}
+
+.stats .status {
+    background: transparent url(../gfx/check.png) left center no-repeat;
+}
+
+.stats .timespan {
+    background: transparent url(../gfx/clock.png) left center no-repeat;
+}
+
+.stats .languages-title {
+    text-align: center;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.stats .languages {
+    height: 100px;
+}
+
+.stats .languages > * {
+    height: 30px;
+    padding: 10px 0 0 60px;
+    display: inline-block;
+    margin: 0 37px 0 0;
+}
+
+.stats .languages .en {
+    background: transparent url(../gfx/languages/United-Kingdom.png) left center no-repeat;
+}
+
+.stats .languages .es {
+    background: transparent url(../gfx/languages/Spain.png) left center no-repeat;
+}
+
+.stats .languages .pt {
+    background: transparent url(../gfx/languages/Portugal.png) left center no-repeat;
+}
+
+.stats .languages .fr {
+    background: transparent url(../gfx/languages/France.png) left center no-repeat;
+}
+
+.stats .languages .tr {
+    background: transparent url(../gfx/languages/Turkey.png) left center no-repeat;
+}
+
+.stats .languages .it {
+    background: transparent url(../gfx/languages/Italy.png) left center no-repeat;
+}
+
+.stats .languages .nl {
+    background: transparent url(../gfx/languages/Netherlands.png) left center no-repeat;
+}
+
+.stats .languages .de {
+    background: transparent url(../gfx/languages/Germany.png) left center no-repeat;
+}
+
+.footer {
+    margin: 50px 0 0 0;
 }
