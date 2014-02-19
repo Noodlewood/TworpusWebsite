@@ -1,5 +1,11 @@
 body {
+    font-family: 'Oswald', Arial, Verdana, sans-serif;
+}
+body {
     margin: 70px 0 0 0;
+    font: Oswald;
+    cursor: default;
+    background: #DFFB3F none;
 }
 
 .center {
@@ -17,21 +23,21 @@ body {
 }
 
 .header .content {
-    width: 1000px;
+    width: 1024px;
     margin: 0 auto;
     height: 70px;
 }
 
-.header .content > * {
-    margin: 27px 0 0 0;
-}
-
 .header .tworpus {
     float: left;
+    font-size: 34px;
+    letter-spacing: 3px;
+    margin: 10px 0 0;
 }
 
 .header .navi {
     float: right;
+    margin: 27px 0 0 0;
 }
 
 .navi-btn {
@@ -51,7 +57,15 @@ body {
 .about {
     background: #fff none;
     height: 600px;
-    padding: 25px 0 0 0;
+    padding: 50px;
+}
+
+.about .title {
+    color: #fff;
+    background: #DFFB3F none;
+    font-size: 24px;
+    padding: 15px;
+    width: 150px;
 }
 
 .stats {
