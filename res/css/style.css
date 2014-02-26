@@ -90,13 +90,13 @@ body {
     background: transparent url(../gfx/download_hover.png) center center no-repeat;
 }
 
-.visualisations {
+.community {
     background: #252E2A none;
     text-align: center;
     color: #fff;
 }
 
-.visualisations .upload-btn {
+.community .upload-btn {
     background: transparent url(../gfx/upload.png) center center no-repeat;
     cursor: pointer;
     font-weight: bold;
@@ -107,11 +107,11 @@ body {
     width: 110px;
 }
 
-.visualisations .upload-btn:hover {
+.community .upload-btn:hover {
     background: transparent url(../gfx/upload_hover.png) center center no-repeat;
 }
 
-.visualisations .visualisations-btn, .visualisations .dataconverter-btn {
+.community .visualisations-btn, .community .dataconverter-btn {
     cursor: pointer;
     width: 150px;
     height: 35px;
@@ -119,34 +119,34 @@ body {
     margin-top: 25px;
 }
 
-.visualisations .visualisations-btn {
+.community .visualisations-btn {
     background: transparent url(../gfx/visualisations.png) right center no-repeat;
     padding-right: 10px;
     display: inline-block;
     margin-right: 150px;
 }
 
-.visualisations .visualisations-btn:hover, .visualisations .visualisations-btn.active {
+.community .visualisations-btn:hover, .community .visualisations-btn.active {
     background: transparent url(../gfx/visualisations_hover.png) right center no-repeat;
 }
 
-.visualisations .dataconverter-btn {
+.community .dataconverter-btn {
     background: transparent url(../gfx/dataconverter.png) left center no-repeat;
     padding-left: 18px;
     display: inline-block;
     margin-left: 150px;
 }
 
-.visualisations .dataconverter-btn:hover, .visualisations .dataconverter-btn.active {
+.community .dataconverter-btn:hover, .community .dataconverter-btn.active {
     background: transparent url(../gfx/dataconverter_hover.png) left center no-repeat;
 }
 
-.visualisations .visualisations-container, .visualisations .dataconverter-container {
+.community .visualisations-container, .community .dataconverter-container {
     height: 0;
     overflow: hidden;
 }
 
-.visualisations .visualisation-item {
+.community .visualisation-item {
     cursor: pointer;
     height: 105px;
     display: inline-block;
@@ -155,11 +155,11 @@ body {
     overflow: hidden;
 }
 
-.visualisations .visualisation-item:hover {
+.community .visualisation-item:hover {
     color: #DFFB3F;
 }
 
-.visualisations .visualisation-item .visualisation-item-img {
+.community .visualisation-item .visualisation-item-img {
     width: 75px;
     height: 75px;
     background-size: cover;
@@ -168,7 +168,7 @@ body {
     background-position: center center;
 }
 
-.visualisations .visualisation-item .visualisation-item-title {
+.community .visualisation-item .visualisation-item-title {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -176,7 +176,7 @@ body {
     margin-bottom: 5px;
 }
 
-.visualisations .dataconverter-item {
+.community .dataconverter-item {
     cursor: pointer;
     display: inline-block;
     margin: 10px 20px;
@@ -186,11 +186,11 @@ body {
     padding: 10px;
 }
 
-.visualisations .dataconverter-item:hover {
+.community .dataconverter-item:hover {
     color: #DFFB3F;
 }
 
-.visualisations .visualisation-item .visualisation-item-title {
+.community .visualisation-item .visualisation-item-title {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

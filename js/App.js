@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	TWRP.App.instance = new TWRP.App();
+
 	TWRP.PathToClient = "download/client/desktopclient.exe";
+
 	TWRP.MailAdressForPlugins = "daniel.riedmueller@ur.de";
 	TWRP.MailSubjectForPlugins = "Tworpus Visualisation / Data Converter Upload";
 	TWRP.MailBodyForPlugins = "Hello!%0A%0AThank you for your anticipation.%0APlease attach the plugin and add a screenshot, a title and some description.%0AYour plugin will be published soon so digital humanists, like you, can download it from the website and use it for their own purposes.%0A%0ABest regards, Tworpus Team";
@@ -40,7 +42,6 @@ TWRP.App = Class.extend({
 		visBtn.click($.proxy(this.toggleVisContainer, this, visContainer, dcContainer, visBtn, dcBtn));
 		dcBtn.click($.proxy(this.toggleVisContainer, this, dcContainer, visContainer, dcBtn, visBtn));
 
-
 		var me = this;
 		$.each(TWRP.VisInfo, function(index, value) {
 			var visItem = $('<div></div>')
@@ -58,7 +59,6 @@ TWRP.App = Class.extend({
 				.css('background-image', 'url(' + value.img + ')')
 				.appendTo(visItem);
 		});
-
 
 		$.each(TWRP.DcInfo, function(index, value) {
 			var dcItem = $('<div></div>')
